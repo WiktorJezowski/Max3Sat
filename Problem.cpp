@@ -101,13 +101,6 @@ bool CProblem::bLoad(string sSourcePath) {
 			file.close();
 			iNumberOvVariables++;
 
-			/*for (int i = 0; i < iClauseNumber; i++) {
-				for (int j = 0; j < iClauseSize; j++) {
-					if (!pbSign[i][j]) cout << "-";
-					cout << piNumber[i][j] << " ";
-				}
-				cout << endl;
-			}*/
 			return true;
 		}
 		return false;
@@ -155,7 +148,6 @@ bool CProblem::bAnalizeThisGene(bool* pbGenotype, int iGeneAnalizedIndex) {
 					}
 					iFulfilledGenesInFulfilled--;
 					iFulfilledCounter++;
-					//cout << "a";
 				}
 				else {
 					for (int k = 0; k < iClauseSize; k++) {
@@ -164,7 +156,6 @@ bool CProblem::bAnalizeThisGene(bool* pbGenotype, int iGeneAnalizedIndex) {
 						}
 					}
 					iUnfulfilledCounter++;
-					//cout << "b";
 				}
 			}
 		}
